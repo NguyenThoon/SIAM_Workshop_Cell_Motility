@@ -89,4 +89,4 @@ On the main page of this GitHub repository:
 It will look something like this:
 
 ```bash
-[https://github.com/your-workshop-name/siam-workshop.git](https://github.com/NguyenThoon/SIAM_Workshop_Cell_Motility.git)
+https://github.com/NguyenThoon/SIAM_Workshop_Cell_Motility.git
