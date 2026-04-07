@@ -90,3 +90,50 @@ It will look something like this:
 
 ```bash
 https://github.com/NguyenThoon/SIAM_Workshop_Cell_Motility.git
+
+```
+## Step 2: Open a Terminal
+
+You will need to use a terminal to run Git commands and later compile your C++ code.
+
+### Option 1: Open a terminal in VS Code
+
+In VS Code, go to:
+
+**Terminal > New Terminal**
+
+A terminal window should open near the bottom of the screen.
+
+### Option 2: Use your system terminal
+
+You may also use your computer’s built-in terminal:
+
+- **Windows:** PowerShell or Command Prompt
+- **macOS:** Terminal
+
+Either option is fine. VS Code is often the easiest choice since you can edit code and run commands in the same place.
+## Step 3: Push Your Local Copy to Your Own GitHub
+
+If you want your own copy of the workshop project on your personal GitHub account, you can create a new repository and push your local files there.
+
+This is useful if you want to:
+
+- save your own version of the project
+- make personal changes
+- build a portfolio project
+- practice using Git and GitHub
+
+### 3.1 Create a new repository on your GitHub account
+
+1. Log in to [GitHub](https://github.com/)
+2. Click the **+** icon in the upper-right corner
+3. Click **New repository**
+4. Choose a repository name, for example:
+
+```text
+siam-workshop-student-copy
+```
+5. Choose Public or Private
+6. Click Create repository
+
+It is best not to initialize it with a README if you are pushing an existing local folder.
