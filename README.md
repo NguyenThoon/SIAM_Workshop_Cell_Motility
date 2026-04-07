@@ -152,5 +152,5 @@ git remote add origin https://github.com/your-username/siam-workshop-student-cop
 ```
 This does two things:
 
--renames the original workshop repository remote to workshop
--sets your own GitHub repository as the new origin
+- renames the original workshop repository remote to workshop
+- sets your own GitHub repository as the new origin
