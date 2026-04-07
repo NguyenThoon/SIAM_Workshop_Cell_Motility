@@ -137,3 +137,20 @@ siam-workshop-student-copy
 6. Click Create repository
 
 It is best not to initialize it with a README if you are pushing an existing local folder.
+
+### 3.2 Connect Your Local Project to Your Own GitHub Repository
+
+After creating your new repository on GitHub, copy its URL. It will look something like:
+
+```bash
+https://github.com/your-username/siam-workshop-student-copy.git
+```
+Inside your local workshop folder, run:
+```bash
+git remote rename origin workshop
+git remote add origin https://github.com/your-username/siam-workshop-student-copy.git
+```
+This does two things:
+
+-renames the original workshop repository remote to workshop
+-sets your own GitHub repository as the new origin
