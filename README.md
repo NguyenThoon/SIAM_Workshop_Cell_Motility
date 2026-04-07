@@ -11,15 +11,15 @@ The goal of this workshop is to help students build skills in:
 - scientific computing
 - version control with Git and GitHub
 
-By the end of the workshop, you will have worked with a GitHub-based coding project that you can potentially build on and showcase when applying for **research positions, internships, labs, or graduate school**.
+By the end of the workshop, you will have contributed to a GitHub-based project that you can potentially build on and showcase when applying for **research positions, internships, labs, or graduate school**.
 
 ## Workshop Notes
 
 - You do **not** need prior C++ experience.
 - Prior programming experience may be helpful, but it is **not required**.
-- Some ideas from **vector calculus, linear algebra, and probability** may appear, but these are **not prerequisites**.
+- Some ideas from **vector calculus**, **linear algebra**, and **probability** may appear, but these are **not prerequisites**.
 - Any necessary mathematical background will be introduced during the workshop.
-- Please bring a laptop if you want to code along during the sessions.
+- Please bring a laptop if you would like to code along during the sessions.
 
 ## The Model We Will Study
 
@@ -36,121 +36,44 @@ By simulating interactions between these elements, we can model how cells move, 
 
 ## Before You Begin
 
-You should already have the following installed or created:
+You should already have the following:
 
 - [Git](https://github.com/git-guides/install-git)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- a GitHub account at [GitHub](https://github.com/)
+- a [GitHub account](https://github.com/)
 
 If you have **not** done that yet, please complete those steps first.
 
-## C++ Setup for VS Code
+You will also need a **C++ compiler** and debugger in addition to VS Code.
 
-You will need a **C++ compiler** and debugger in addition to VS Code.
+### Windows setup
 
-### Windows
-Use one of the following setups:
+Use one of the following guides:
 
 - [Configure VS Code for Microsoft C++](https://code.visualstudio.com/docs/cpp/config-msvc)
 - [Using GCC with MinGW in VS Code](https://code.visualstudio.com/docs/cpp/config-mingw)
 
-### macOS
+### macOS setup
+
 Use one of the following guides:
 
-- [Using C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config-linux)  
 - [Using Clang in Visual Studio Code](https://code.visualstudio.com/docs/cpp/config-clang-mac)
+- [Using C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config-linux)
 
-> Note: On macOS, the most common setup is Clang through Apple's developer tools.
+> Note: For most Mac users, the Clang setup is the standard choice.
 
-## What You Will Do
+## Quick Start
 
-There are two GitHub-related tasks in this workshop:
-
-1. **Download this workshop repository to your computer**
-2. **Optionally create your own GitHub repository and push your copy there**
-
-The first step is required if you want to run the code locally.  
-The second step is useful if you want your own backup copy or want to showcase your work on your own GitHub profile.
-
----
-
-# Part 1: Download the Workshop Code to Your Computer
-
-This process is called **cloning** a repository.
-
-## Step 1: Copy the repository URL
-
-On the main page of this GitHub repository:
-
-1. Click the green **Code** button
-2. Make sure **HTTPS** is selected
-3. Copy the repository URL
-
-It will look something like this:
+To get the workshop code onto your computer, open a terminal in VS Code or your system terminal and run:
 
 ```bash
-https://github.com/NguyenThoon/SIAM_Workshop_Cell_Motility.git
-
+git clone https://github.com/NguyenThoon/SIAM_Workshop_Cell_Motility.git
+cd SIAM_Workshop_Cell_Motility
+code .
 ```
-## Step 2: Open a Terminal
+Once the project is open in VS Code:
 
-You will need to use a terminal to run Git commands and later compile your C++ code.
+1. Open the appropriate .cpp file
+2. Build and run the program using your configured C++ setup
+3. Follow lesson-specific instructions in each lesson folder
 
-### Option 1: Open a terminal in VS Code
-
-In VS Code, go to:
-
-**Terminal > New Terminal**
-
-A terminal window should open near the bottom of the screen.
-
-### Option 2: Use your system terminal
-
-You may also use your computer’s built-in terminal:
-
-- **Windows:** PowerShell or Command Prompt
-- **macOS:** Terminal
-
-Either option is fine. VS Code is often the easiest choice since you can edit code and run commands in the same place.
-## Step 3: Push Your Local Copy to Your Own GitHub
-
-If you want your own copy of the workshop project on your personal GitHub account, you can create a new repository and push your local files there.
-
-This is useful if you want to:
-
-- save your own version of the project
-- make personal changes
-- build a portfolio project
-- practice using Git and GitHub
-
-### 3.1 Create a new repository on your GitHub account
-
-1. Log in to [GitHub](https://github.com/)
-2. Click the **+** icon in the upper-right corner
-3. Click **New repository**
-4. Choose a repository name, for example:
-
-```text
-siam-workshop-student-copy
-```
-5. Choose Public or Private
-6. Click Create repository
-
-It is best not to initialize it with a README if you are pushing an existing local folder.
-
-### 3.2 Connect Your Local Project to Your Own GitHub Repository
-
-After creating your new repository on GitHub, copy its URL. It will look something like:
-
-```bash
-https://github.com/your-username/siam-workshop-student-copy.git
-```
-Inside your local workshop folder, run:
-```bash
-git remote rename origin workshop
-git remote add origin https://github.com/your-username/siam-workshop-student-copy.git
-```
-This does two things:
-
-- renames the original workshop repository remote to workshop
-- sets your own GitHub repository as the new origin
